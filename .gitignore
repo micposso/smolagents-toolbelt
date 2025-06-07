@@ -1,0 +1,51 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables
+.env
+.env.*
+
+# Virtual environments
+venv/
+env/
+.venv/
+.ENV/
+
+# pip-tools
+*.lock
+pip-log.txt
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs and debug
+*.log
+*.tmp
+
+# Cache
+.cache/
+*.cache
+*.sqlite3
+
+# VSCode
+.vscode/
+
+# Pytest
+.pytest_cache/
+
+# Model artifacts
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.joblib
+
+# Transformers & HuggingFace
+~/.cache/huggingface/
+huggingface/
