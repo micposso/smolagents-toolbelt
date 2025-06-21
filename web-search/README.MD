@@ -9,11 +9,20 @@ This repo is a hands-on toolbelt of example agents that demonstrate reasoning, t
 ## Included Agents
 
 ### 🔍 1. Basic Web Search Agent
-A single-agent setup that retrieves and summarizes answers using the DuckDuckGo Search Tool.
+A single-agent web search setup that retrieves and summarizes 5 facts about any country.
 
 > **Use case**:  
-> “Search for a Python library to process CSV files and show me how to use it.”
+> “Japan”
 
+## Runing the backend app
+```bash
+uvicorn web-search:app --reload
+```
+
+## Runnig the frontend app
+```bash
+python gradio_ui.py
+```
 ---
 
 ### 2. Multi-Agent System: Manager + Web Search Agents

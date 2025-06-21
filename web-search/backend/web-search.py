@@ -5,8 +5,10 @@ from pathlib import Path
 from dotenv import load_dotenv
 import os
 
-load_dotenv(dotenv_path=Path("../.env"))
+load_dotenv(dotenv_path=Path("../../.env"))  # Load environment variables from .env file
+# Load OpenAI API key from environment variables
 api_key = os.getenv("OPENAI_API_KEY")
+print(api_key);
 
 model = OpenAIServerModel(
     model_id="gpt-3.5-turbo",
